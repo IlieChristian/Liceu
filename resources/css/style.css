@@ -18,6 +18,8 @@
     src: url(../fonts/Poppins-ExtraBold.woff) format("woff");
 }
 
+::-webkit-scrollbar{display: none;}
+
 *{
     margin: 0;
     padding: 0;
@@ -29,31 +31,31 @@ html{
     scroll-behavior: smooth;
 }
 
-body{display: block; position: relative;  }
+body{display: block; position: relative;overflow-y: scroll;  }
 
 .Header{display: block; position: sticky;top:0; width: 100%; height: 80px; background: rgb(147, 149, 151); z-index: 1; box-shadow: 0 8px 6px -6px black;border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;}
-@media(min-width: 996px) {.Header{height: 100px;}}
+@media (min-width: 996px) {.Header{height: 100px;}}
     .MainMenu{display: flex; position: relative; }
         .Logo{display: block; height: 80px; width: auto; margin: 0 0.5rem; }
             .LogoImage{display: block; padding: 0.5rem; height: 4rem; width: 4rem}
-            @media(min-width: 996px) {.LogoImage{padding: 0.3rem; height: 4.5rem; width: 4.5rem}}
+            @media (min-width: 996px) {.LogoImage{padding: 0.3rem; height: 4.5rem; width: 4.5rem}}
         .MainMenuButton{display: block; margin: 0 1rem; padding: 0; height: 80px; width: 50px; appearance: none; border: none; background: transparent;}
-        @media(min-width: 996px) {.MainMenuButton{display: none;}}
+        @media (min-width: 996px) {.MainMenuButton{display: none;}}
             .MainMenuImage{display: block; }
         .MainMenuTitle{display: block; color: #fff; flex-grow: 1; align-self: center; margin: 0 0.4rem; font-size: clamp(0.5rem, 5vw, 1.5rem)}
-        .MainMenuList{ display: none; position: absolute; z-index: 1; width: 100%;  margin: 5rem 0 0 0; background: rgba(147, 149, 151, 0.7); box-shadow: 0 8px 6px -6px black; border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;}
-        @media(min-width: 996px) {.MainMenuList{display: flex;position: absolute; height: 3rem; width: 98%; place-content: center;top: 5rem; left: 0; bottom: 0; right: 0; margin: 0 1vw;background:rgb(0, 2, 97);justify-content: space-evenly; border-radius: 10px;;
+        .MainMenuList{display: none; position: absolute; z-index: 1; width: 100%;  margin: 5rem 0 0 0; background: rgba(147, 149, 151, 0.7); box-shadow: 0 8px 6px -6px black; border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;}
+        @media (min-width: 996px) {.MainMenuList{display: flex;position: absolute; height: 3rem; width: 98%; place-content: center;top: 5rem; left: 0; bottom: 0; right: 0; margin: 0 1vw;background:rgb(0, 2, 97);justify-content: space-evenly; border-radius: 10px;;
             box-shadow: rgba(0, 0, 0, 0.9) 0px 3px 8px;   align-items: center;}}
         .MainMenuList.Active{ display: block;}
-        @media(min-width: 996px) {.MainMenuList.Active{ display: none;}}
+        @media (min-width: 996px) {.MainMenuList.Active{ display: none;}}
             .MainMenuItem{display: block; margin: 0.5rem 0;}
-            @media(min-width: 996px) {.MainMenuItem{display: block; position: relative; margin: 0;}}
+            @media (min-width: 996px) {.MainMenuItem{display: block; position: relative; margin: 0; height: 100%;}}
                 .MainMenuLink{ display: block; padding: 0.25rem; text-align: center; text-decoration: none; font-size: clamp(0.5rem, 5vw, 1.5rem); color: #fff;}
-                @media(min-width: 996px) {.MainMenuLink{display: block; position: relative; font-size: 1.2rem; padding: 0.7rem;}}
-                .MainMenuLink:hover{background:rgba(0, 2, 97, 0.7)}
-                @media(min-width: 996px) {.MainMenuLink:hover{background:rgb(147, 149, 151); border-radius: 10px;}}
-.Main{display: block; background:rgb(245, 223, 77); height: 92vh; bottom: 0;}
-@media(min-width: 996px) {.Main{height: 90vh;}}
+                @media (min-width: 996px) {.MainMenuLink{display: block; position: relative; font-size: 1.2rem; padding: 0.6rem;}}
+                .MainMenuLink:hover{background:rgba(0, 2, 97, 0.7);}
+                @media (min-width: 996px) {.MainMenuLink:hover{background: rgba(8, 92, 160, 0.5); border-radius: 10px;} .MainMenuLink.On{background: #fff; color:rgb(0, 2, 97);border-radius: 10px; }}
+.Main{display: block; background-image: url(../img/background-pattern.webp);background-repeat: repeat; height: 92vh; bottom: 0;}
+@media (min-width: 996px) {.Main{height: 89vh;}}
 .UpButton{ display: none; position: fixed; bottom: 20px; right: 30px; z-index: 99; place-content: center; width: 54px; height: 54px; border: none; appearance: none;border-radius: 50%; background: transparent; cursor: pointer;}
     .UpButtonImage{display: block;}
     .Preview{display: block; position: relative;} 
