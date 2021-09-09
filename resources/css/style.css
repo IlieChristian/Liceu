@@ -44,7 +44,7 @@ li{list-style: none;}
         .MainMenuButton{display: block; margin: 0 1rem; padding: 0; height: 80px; width: 50px; appearance: none; border: none; background: transparent;}
         @media (min-width: 996px) {.MainMenuButton{display: none;}}
             .MainMenuImage{display: block; }
-        .MainMenuTitle{display: block; color: #fff; flex-grow: 1; align-self: center; margin: 0 0.4rem; font-size: clamp(0.5rem, 5vw, 1.5rem)}
+        .MainMenuTitle{display: block; color: #fff; flex-grow: 1; align-self: center; margin: 0 0.4rem; font-size: clamp(0.5rem, 4vw, 1.5rem)}
         .MainMenuList{display: none; position: absolute; z-index: 1; width: 100%;  margin: 5rem 0 0 0; background: rgba(147, 149, 151, 0.7); box-shadow: 0 8px 6px -6px black; border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;}
         @media (min-width: 996px) {.MainMenuList{display: flex;position: absolute; height: 3rem; width: 98%; place-content: center;top: 5rem; left: 0; bottom: 0; right: 0; margin: 0 1vw;background:rgb(0, 2, 97);justify-content: space-evenly; border-radius: 10px;;
             box-shadow: rgba(0, 0, 0, 0.9) 0px 3px 8px; align-items: center;}}
