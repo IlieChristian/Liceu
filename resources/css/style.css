@@ -61,7 +61,4 @@ li{list-style: none;}
     .UpButtonImage{display: block;}
     .Preview{display: grid; justify-content: center; background-image: url(../img/background-pattern.webp);background-repeat: repeat; height: 86vh; bottom: 0;}
     @media (min-width: 996px) {.Preview{ height: 89vh;}}
-        .Slider{display: flex; justify-content: center; margin: 3rem 1rem; box-shadow:2px 2px 50px grey; height: 31.2rem; }
-            .SliderItem{display: none;}
-            .SliderItem.Active{ display: block;}
-                .SliderImage{  }
+        .Edward{display: block; position: relative; width: 250px; height: 200px; margin: 2.5rem 0;}
