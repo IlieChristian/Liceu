@@ -59,6 +59,8 @@ li{list-style: none;}
 .Main{display: block;}
 .UpButton{ display: none; position: fixed; bottom: 20px; right: 30px; z-index: 99; place-content: center; width: 54px; height: 54px; border: none; appearance: none;border-radius: 50%; background: transparent; cursor: pointer;}
     .UpButtonImage{display: block;}
-    .Preview{display: grid; justify-content: center; background-image: url(../img/background-pattern.webp);background-repeat: repeat; height: 86vh; bottom: 0;}
-    @media (min-width: 996px) {.Preview{ height: 89vh;}}
+    .Preview{display: grid;background-color: #001220; justify-content: center; bottom: 0;}
         .Edward{display: block; position: relative; width: 250px; height: 200px; margin: 2.5rem 0;}
+        .Spacer{background-repeat: no-repeat; background-size: cover; background-position: center;width: 100%; aspect-ratio: 3/2;}
+        .Layer1{background: url(../img/layered-waves.svg);}
+    .FirstBox{background-color: #fff; height: 500px;}
