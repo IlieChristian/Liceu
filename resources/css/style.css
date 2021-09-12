@@ -62,5 +62,15 @@ li{list-style: none;}
     .Preview{display: grid;background-color: #001220; justify-content: center; bottom: 0;}
         .Edward{display: block; position: relative; width: 250px; height: 200px; margin: 2.5rem 0;}
         .Spacer{width: 100%; height: 15vh;}
-        .Layer1{background-image: url(../img/layered-waves.svg); background-repeat: no-repeat; background-size: cover;}
-    .FirstBox{background-color: #fff; height: 500px;}
+        .Layer1{background-image: url(../img/layer1.svg); background-repeat: no-repeat; background-size: cover;}
+    .FirstBox{display: grid; background-color: #fff; padding: 0 1.5rem;justify-items: center;}
+        .Layer2{background-image: url(../img/layer2.svg); background-repeat: no-repeat; background-size: cover;}
+        .BoxTitle{display: block; text-align: center; padding: 1rem 0;}
+        .BoxText{font-size: 0.7rem; margin-bottom: 0.5rem;  }
+            .BoxTextLink1{color: #fff; }
+            .BoxTextLink2{color: #000 }
+    .SecondBox{display: grid; background-color: #001220; color: white;margin: -1px 0; padding: 0 1.5rem;justify-items: center;}
+        .Layer3{background-image: url(../img/layer3.svg); background-repeat: no-repeat; background-size: cover;}
+    .ThirdBox{display: grid; padding: 0 1.5rem;justify-items: center;}
+        .Layer4{background-image: url(../img/layer4.svg); background-repeat: no-repeat; background-size: cover;}
+    .FourthBox{display: grid; background-color: #001220; color: white;margin: -1px 0; padding: 0 1.5rem;justify-items: center;}
