@@ -35,7 +35,7 @@ body{display: grid; position: relative;overflow-y: scroll;justify-items: center;
 
 li{list-style: none;}
 
-.Header{display: block; position: sticky;top:0; width: 100%; height: 80px; background: rgb(147, 149, 151); z-index: 1; box-shadow: 0 8px 6px -6px black;border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;}
+.Header{display: block; position: sticky;top:0; width: 100%; height: 80px; background: #474747; z-index: 1; box-shadow: 0 8px 6px -6px black;border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;}
 @media (min-width: 996px) {.Header{height: 100px;}}
     .MainMenu{display: flex; position: relative; }
         .Logo{display: block; height: 80px; width: auto; margin: 0 0.5rem; }
@@ -45,7 +45,7 @@ li{list-style: none;}
         @media (min-width: 996px) {.MainMenuButton{display: none;}}
             .MainMenuImage{display: block; }
         .MainMenuTitle{display: block; color: #fff; flex-grow: 1; align-self: center; margin: 0 0.4rem; font-size: clamp(0.5rem, 4vw, 1.5rem)}
-        .MainMenuList{display: none; position: absolute; z-index: 1; width: 100%;  margin: 5rem 0 0 0; background: rgba(147, 149, 151, 0.7); box-shadow: 0 8px 6px -6px black; border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;}
+        .MainMenuList{display: none; position: absolute; z-index: 1; width: 100%;  margin: 5rem 0 0 0; background: rgba(71, 71, 71, 0.7); box-shadow: 0 8px 6px -6px black; border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;}
         @media (min-width: 996px) {.MainMenuList{display: flex;position: absolute; height: 3rem; width: 98%; place-content: center;top: 5rem; left: 0; bottom: 0; right: 0; margin: 0 1vw;background:rgb(0, 2, 97);justify-content: space-evenly; border-radius: 10px;;
             box-shadow: rgba(0, 0, 0, 0.9) 0px 3px 8px; align-items: center;}}
         .MainMenuList.Active{ display: block;}
@@ -79,4 +79,18 @@ li{list-style: none;}
     .ThirdBox{display: grid; padding: 0 1.5rem;}
         .Layer4{background-image: url(../img/layer4.svg); background-repeat: no-repeat; background-size: cover;}
     .FourthBox{display: grid; background-color: #001220; color: white;margin: -1px 0; padding: 0 1.5rem 1.5rem;}
-.Footer{display: block; width: 100%; height: 150px; background-color: #292c2f;border-top-left-radius: 10px;border-top-right-radius: 10px;}
+.Footer{display: block; width: 100%; background-color: #474747; color: #D4D4D4;border-top-left-radius: 5px;border-top-right-radius: 5px;}
+    .FooterContent{Display: block; padding: 1rem;  }
+        .FooterDetails{  }
+            .FooterHead{display: inline-flex;align-items: center;  }
+                .FooterLogo{display: block; padding-right: 1rem;  }
+                .FooterTitle{margin-bottom: 1rem;  }
+            .FooterParagraph{  }
+        .FooterLine{display: block; height: 1px; width: 100%; background-color:#D4D4D4; margin: 1rem 0; }
+        .FooterContact{  }
+            .FooterContactList{  }
+                .FooterContactItem{display: inline-flex;  }
+                    .FooterContactImage{padding-right: 0.5rem;  }
+                    .FooterContentText{  }
+                    .FooterContentMail{  }
+    .Copyright{  }
