@@ -31,7 +31,7 @@ html{
     scroll-behavior: smooth;
 }
 
-body{display: block; position: relative;overflow-y: scroll;}
+body{display: grid; position: relative;overflow-y: scroll;justify-items: center;}
 
 li{list-style: none;}
 
@@ -57,20 +57,26 @@ li{list-style: none;}
                 .MainMenuLink:hover{background:rgba(0, 2, 97, 0.7);}
                 @media (min-width: 996px) {.MainMenuLink:hover{background: rgba(8, 92, 160, 0.5); border-radius: 10px;} .MainMenuLink.On{background: #fff; color:rgb(0, 2, 97);border-radius: 10px; }}
 .Main{display: block;}
-.UpButton{ display: none; position: fixed; bottom: 20px; right: 30px; z-index: 99; place-content: center; width: 54px; height: 54px; border: none; appearance: none;border-radius: 50%; background: transparent; cursor: pointer;}
-    .UpButtonImage{display: block;}
+@media(min-width: 996px) {.Main{max-width: 70vw;}}
+.UpButton{ display: none; position: fixed; bottom: 10px; right: 10px; z-index: 99; place-content: center; width: 40px; height: 40px; border: none; appearance: none;border-radius: 50%; background: transparent; cursor: pointer;}
+    @media(min-width: 996px){.UpButton{bottom: 20px; right: 30px;width: 54px; height: 54px; }}
+    .UpButtonImage{display: block;width: 40px; height: 40px;}
+    @media(min-width: 996px){.UpButtonImage{width: 54px; height: 54px;}}
     .Preview{display: grid;background-color: #001220; justify-content: center; bottom: 0;}
+    @media(min-width: 996px){.Preview{padding-top: 2rem;1}}
         .Edward{display: block; position: relative; width: 250px; height: 200px; margin: 2.5rem 0;}
+        @media(min-width: 996px){.Edward{margin: 3rem 0;}}
         .Spacer{width: 100%; height: 15vh;}
         .Layer1{background-image: url(../img/layer1.svg); background-repeat: no-repeat; background-size: cover;}
-    .FirstBox{display: grid; background-color: #fff; padding: 0 1.5rem;justify-items: center;}
+    .FirstBox{display: grid; background-color: #fff; padding: 0 1.5rem;}
         .Layer2{background-image: url(../img/layer2.svg); background-repeat: no-repeat; background-size: cover;}
-        .BoxTitle{display: block; text-align: center; padding: 1rem 0;}
-        .BoxText{font-size: 1rem; margin-bottom: 0.5rem;text-indent: 2rem; }
+        .BoxTitle{display: block; text-align: center; padding: 2rem 0;}
+        .BoxText{font-size: 1rem; padding-bottom: 1rem;text-indent: 2rem;text-align: left; }
             .BoxTextLink1{color: #fff; }
             .BoxTextLink2{color: #000 }
-    .SecondBox{display: grid; background-color: #001220; color: white;margin: -1px 0; padding: 0 1.5rem;justify-items: center;}
+    .SecondBox{display: grid; background-color: #001220; color: white;margin: -1px 0; padding: 0 1.5rem;}
         .Layer3{background-image: url(../img/layer3.svg); background-repeat: no-repeat; background-size: cover;}
-    .ThirdBox{display: grid; padding: 0 1.5rem;justify-items: center;}
+    .ThirdBox{display: grid; padding: 0 1.5rem;}
         .Layer4{background-image: url(../img/layer4.svg); background-repeat: no-repeat; background-size: cover;}
-    .FourthBox{display: grid; background-color: #001220; color: white;margin: -1px 0; padding: 0 1.5rem;justify-items: center;}
+    .FourthBox{display: grid; background-color: #001220; color: white;margin: -1px 0; padding: 0 1.5rem;}
+.Footer{display: block; width: 100%; height: 150px; background-color: rgb(147, 149, 151);border-top-left-radius: 10px;border-top-right-radius: 10px;}
