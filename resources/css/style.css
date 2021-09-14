@@ -52,10 +52,12 @@ li{list-style: none;}
         @media (min-width: 996px) {.MainMenuList.Active{ display: none;}}
             .MainMenuItem{display: block; margin: 0.5rem 0;}
             @media (min-width: 996px) {.MainMenuItem{display: block; position: relative; margin: 0; height: 100%;}}
-                .MainMenuLink{ display: block; padding: 0.25rem; text-align: center; text-decoration: none; font-size: clamp(0.5rem, 5vw, 1.5rem); color: #fff;}
+                .MainMenuLink{display: block;position: relative; padding: 0.25rem; text-align: center; text-decoration: none; font-size: clamp(0.5rem, 5vw, 1.5rem); color: #fff;z-index: 1;}
+                .MainMenuLink::after{content: '';position: absolute; width: 100%; height: 100%;background:rgba(8, 92, 160, 0.5);top: 0; left: 0;border-radius: 10px;z-index: -1;transform: scale(0); transition: transform 200ms cubic-bezier(0.4, 0, 1, 1);}
+                .MainMenuLink:hover::after{transform: scale(1)}
                 @media (min-width: 996px) {.MainMenuLink{display: block; position: relative; font-size: 1.2rem; padding: 0.6rem;}}
-                .MainMenuLink:hover{background:rgba(0, 2, 97, 0.7);}
-                @media (min-width: 996px) {.MainMenuLink:hover{background: rgba(8, 92, 160, 0.5); border-radius: 10px;} .MainMenuLink.On{background: #fff; color:rgb(0, 2, 97);border-radius: 10px; }}
+                .MainMenuLink.On::after{display: none;}
+                .MainMenuLink.On{background: #fff; color:rgb(0, 2, 97); border-radius: 10px;}
 .Main{display: block;}
 @media(min-width: 996px) {.Main{max-width: 80vw;}}
 .UpButton{ display: none; position: fixed; bottom: 10px; right: 10px; z-index: 99; place-content: center; width: 40px; height: 40px; border: none; appearance: none;border-radius: 50%; background: transparent; cursor: pointer;}
@@ -79,18 +81,28 @@ li{list-style: none;}
     .ThirdBox{display: grid; padding: 0 1.5rem;}
         .Layer4{background-image: url(../img/layer4.svg); background-repeat: no-repeat; background-size: cover;}
     .FourthBox{display: grid; background-color: #001220; color: white;margin: -1px 0; padding: 0 1.5rem 1.5rem;}
-.Footer{display: block; width: 100%; background-color: #474747; color: #D4D4D4;border-top-left-radius: 5px;border-top-right-radius: 5px;}
-    .FooterContent{Display: block; padding: 1rem;  }
-        .FooterDetails{  }
-            .FooterHead{display: inline-flex;align-items: center;  }
+.Footer{display: grid;justify-items: center; width: 100%; background-color: #474747; color: #D4D4D4;border-top-left-radius: 5px;border-top-right-radius: 5px;}
+.FooterWidth{padding: 1.5rem 1.5rem 0.5rem;}
+@media(min-width: 996px){.FooterWidth{max-width: 80vw;}}
+    .FooterContent{display: block;}
+    @media(min-width: 996px){.FooterContent{display: flex; flex-direction: row;}}
+        .FooterDetails{padding: 0.5rem; }
+        @media(min-width: 996px){.FooterDetails{width: calc(50% - 5px);}}
+            .FooterHead{display: inline-flex;align-items: center;margin-bottom: 1rem;  }
                 .FooterLogo{display: block; padding-right: 1rem;  }
-                .FooterTitle{margin-bottom: 1rem;  }
-            .FooterParagraph{  }
-        .FooterLine{display: block; height: 1px; width: 100%; background-color:#D4D4D4; margin: 1rem 0; }
-        .FooterContact{  }
-            .FooterContactList{  }
-                .FooterContactItem{display: inline-flex;  }
+                .FooterTitle{}
+            .FooterParagraph{text-indent: 2rem;  }
+        .FooterLine{display: block; height: 1px; width: 100%; background-color:#D4D4D4; margin: 1rem 0;border-radius: 10px;}
+        @media(min-width: 996px){.FooterLine{height: 181px; width: 2px; margin: 0 0.5rem;}}
+        .FooterContact{padding: 0.5rem;}
+        @media(min-width: 996px){.FooterContact{width: calc(50% - 5px);}}
+        .FooterContactTitle{margin-bottom: 1rem;}
+            .FooterContactList{display: flex; flex-direction: column;}
+                .FooterContactItem{display: inline-flex; margin: 0.5rem;  }
                     .FooterContactImage{padding-right: 0.5rem;  }
                     .FooterContentText{  }
-                    .FooterContentMail{  }
-    .Copyright{  }
+                    .FooterContentMail{position: relative;text-decoration: none; color:#D4D4D4;}
+                    .FooterContentMail::after{content: '';position: absolute; width: 100%; height: 2px;background: currentColor; left: 0; bottom: 0; border-radius: 10px;transform: scaleX(0); transform-origin: right; transition: transform 250ms ease-in;}
+                    .FooterContentMail:hover::after{transform: scaleX(1); transform-origin: left;}
+    .Copyright{display: grid; margin-bottom: 0.5rem; justify-content: center;}
+        .FooterLineC{display: block; height: 2px; width: 100%; background-color:#D4D4D4; margin: 1rem 0;border-radius: 10px;}
