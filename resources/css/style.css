@@ -64,11 +64,14 @@ li{list-style: none;}
     @media(min-width: 996px){.UpButton{bottom: 20px; right: 30px;width: 54px; height: 54px; }}
     .UpButtonImage{display: block;width: 40px; height: 40px;}
     @media(min-width: 996px){.UpButtonImage{width: 54px; height: 54px;}}
+    
+    /*index.html*/
+    
     .Preview{display: grid;background-color: #001220; justify-content: center; bottom: 0;}
     @media(min-width: 996px){.Preview{padding-top: 2rem;}}
         .Edward{display: block; position: relative; width: 250px; height: 200px; margin: 2.5rem 0;}
         @media(min-width: 996px){.Edward{margin: 3rem 0;}}
-        .Spacer{width: 100%; height: 15vh;}
+        .Spacer{width: 100%; height: 16vh;}
         .Layer1{background-image: url(../img/layer1.svg); background-repeat: no-repeat; background-size: cover;}
     .FirstBox{display: grid; background-color: #fff; padding: 0 1.5rem;}
         .Layer2{background-image: url(../img/layer2.svg); background-repeat: no-repeat; background-size: cover;}
@@ -81,6 +84,15 @@ li{list-style: none;}
     .ThirdBox{display: grid; padding: 0 1.5rem;}
         .Layer4{background-image: url(../img/layer4.svg); background-repeat: no-repeat; background-size: cover;}
     .FourthBox{display: grid; background-color: #001220; color: white;margin: -1px 0; padding: 0 1.5rem 1.5rem;}
+
+    /*oferta-liceului.html*/
+
+    .Offer{margin-top: 2rem;  }
+        .OfferBox{  }
+            .OfferTitle{  }
+            .OfferText{  }
+            .OfferText.On{  }
+            .ButtonOff{}
 .Footer{display: grid;justify-items: center; width: 100%; background-color: #474747; color: #D4D4D4;border-top-left-radius: 5px;border-top-right-radius: 5px;}
 .FooterWidth{padding: 1.5rem 1.5rem 0.5rem;}
 @media(min-width: 996px){.FooterWidth{max-width: 80vw;}}
