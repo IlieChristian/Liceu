@@ -87,22 +87,22 @@ li{list-style: none;}
 
     /*oferta-liceului.html*/
 
-    .Offer{margin-top: 2rem;background-color: #B1DAFD; border-radius: 20px;   }
-        .OfferBox{display: flex; flex-direction: column; padding: 0.5rem;}
-            .OfferTitle{text-align: center;}
+    .Offer{margin-top: 2rem;background-color: #B1DAFD; border-radius: 20px;margin: 0.5rem;   }
+        .OfferBox{display: grid; padding: 0.5rem;}
+            .OfferTitle{text-align: center;margin-bottom: 2rem;}
             .OfferText{  }
-            .OfferText.On{  }
+            .OfferText.On{margin-left: 0.5rem;  }
                 .OfferTextClass{  }
                     .OfferTextBox{  }
                         .OfferTextBoxTitle{  }
-                        .OfferTextBoxList{  }
+                        .OfferTextBoxList{margin-left: 2rem;  }
                             .OfferTextBoxItem{list-style-type: circle;  }
                 .OfferTextAverage{  }
                     .OfferTextAverageTitle{  }
-                    .OfferTextAverageList{  }
+                    .OfferTextAverageList{margin-left: 2rem;  }
                         .OfferTextAverageItem{list-style-type: circle;  }
                 .OfferVideo{}
-                    .OfferVideoFrame{width: 300px; height: auto;}
+                    .OfferVideoFrame{width: 285px; height: auto;margin-left: -0.5rem;}
             .ButtonOff{}
 
 
