@@ -19,3 +19,9 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
+
+let $readmore = document.querySelectorAll('.ReadMore');
+let $active = document.querySelectorAll('.OfferBoxBox');
+$readmore.addEventListener('click', () => {
+  $active.classList.toggle('On');
+})
