@@ -92,7 +92,20 @@ li{list-style: none;}
             .OfferTitle{  }
             .OfferText{  }
             .OfferText.On{  }
+                .OfferTextClass{  }
+                    .OfferTextBox{  }
+                        .OfferTextBoxTitle{  }
+                        .OfferTextBoxList{  }
+                            .OfferTextBoxItem{list-style-type: circle;  }
+                .OfferTextAverage{  }
+                    .OfferTextAverageTitle{  }
+                    .OfferTextAverageList{  }
+                        .OfferTextAverageItem{list-style-type: circle;  }
+
             .ButtonOff{}
+
+
+
 .Footer{display: grid;justify-items: center; width: 100%; background-color: #474747; color: #D4D4D4;border-top-left-radius: 5px;border-top-right-radius: 5px;}
 .FooterWidth{padding: 1.5rem 1.5rem 0.5rem;}
 @media(min-width: 996px){.FooterWidth{max-width: 80vw;}}
