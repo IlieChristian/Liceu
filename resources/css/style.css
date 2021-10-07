@@ -87,9 +87,9 @@ li{list-style: none;}
 
     /*oferta-liceului.html*/
 
-    .Offer{margin-top: 2rem;  }
-        .OfferBox{  }
-            .OfferTitle{  }
+    .Offer{margin-top: 2rem;background-color: #B1DAFD; border-radius: 20px;   }
+        .OfferBox{display: flex; flex-direction: column; padding: 0.5rem;}
+            .OfferTitle{text-align: center;}
             .OfferText{  }
             .OfferText.On{  }
                 .OfferTextClass{  }
@@ -101,7 +101,8 @@ li{list-style: none;}
                     .OfferTextAverageTitle{  }
                     .OfferTextAverageList{  }
                         .OfferTextAverageItem{list-style-type: circle;  }
-
+                .OfferVideo{}
+                    .OfferVideoFrame{width: 300px; height: auto;}
             .ButtonOff{}
 
 
