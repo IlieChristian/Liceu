@@ -39,10 +39,10 @@
         </header>
         <main class="Main">
             <button class="UpButton" id="upButton" onclick="topFunction()"><img src="resources/img/up.svg" alt="Sus" class="UpButtonImage" width="50" height="50"></button>
-            <div class="Offer">
+            <div class="Offer" data-year="2020-2021">
                 <section class="OfferBox">
                     <h2 class="OfferTitle">Ofertă Educationala 2020-2021</h2>
-                    <section class="OfferBoxBox On">
+                    <section class="OfferBoxBox" style="display: block;">
                         <section class="OfferText">
                             <div class="OfferTextClass">   
                                 <div class="OfferTextBox">
@@ -84,12 +84,13 @@
                             <iframe width="560" height="315" class="OfferVideoFrame" src="https://www.youtube.com/embed/fjvH6C0iPU8" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </section>
+                    <button onclick="readMore('2020-2021')" class="ReadMore">Ascunde</button>
                 </section>
             </div>
-            <div class="Offer">
+            <div class="Offer" data-year="2019-2020">
                 <section class="OfferBox">
                     <h2 class="OfferTitle">Ofertă Educationala 2019-2020</h2>
-                    <section class="OfferBoxBox" id="offerboxbox">
+                    <section class="OfferBoxBox">
                         <section class="OfferText">
                             <div class="OfferTextClass">   
                                 <div class="OfferTextBox">
@@ -127,7 +128,7 @@
                             <iframe width="560" height="315" class="OfferVideoFrame" src="https://www.youtube.com/embed/cRby0OyBL9Q" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </section>
-                    <button id="readMore" class="ReadMore">Vezi mai mult</button>
+                    <button onclick="readMore('2019-2020')" class="ReadMore">Afișează</button>
                 </section>
             </div>
             

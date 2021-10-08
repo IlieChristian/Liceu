@@ -20,8 +20,15 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
   }
 
-let $readmore = document.querySelectorAll('.ReadMore');
-let $active = document.querySelectorAll('.OfferBoxBox');
-$readmore.addEventListener('click', () => {
-  $active.classList.toggle('On');
-})
+function readMore(year){
+  let moreText = document.querySelector(`.Offer[data-year="${year}"] .OfferBoxBox`); 
+  let btnText = document.querySelector(`.Offer[data-year="${year}"] .ReadMore`);
+
+  if(moreText.style.display === "none"){
+    moreText.style.display = "block";
+    btnText.textContent = "Ascunde";
+  }else{
+    moreText.style.display = "none";
+    btnText.textContent = "Afișează";
+  }
+}
