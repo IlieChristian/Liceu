@@ -20,15 +20,4 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
   }
 
-function readMore(year){
-  let moreText = document.querySelector(`.Offer[data-year="${year}"] .OfferBoxBox`); 
-  let btnText = document.querySelector(`.Offer[data-year="${year}"] .ReadMore`);
 
-  if(moreText.style.display === "none"){
-    moreText.style.display = "block";
-    btnText.textContent = "Ascunde";
-  }else{
-    moreText.style.display = "none";
-    btnText.textContent = "Afișează";
-  }
-}
