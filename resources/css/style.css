@@ -115,11 +115,13 @@ li{list-style: none;}
     .News{background-color: #01223b; color: white; border-radius: 5px 20px; left: 0; margin: 0.5rem auto; width: 95%;}
         .NewsBox{display: grid; padding: 1rem; margin: 1rem 0;}
             .NewsTitle{text-align: center;background-color: #ff5949; width: 90%; left: 0; margin: 0 auto 2rem;border-radius: 5px 20px;padding: 0.3rem;  }
-            .NewsTextBox{margin:0 auto;padding: 0 1.5rem; }
+            .NewsTextBox{margin:0 auto;padding: 0 1.5rem;width: 90%; }
                 .NewsText{margin: 1.2rem 0;font-size: 1.3rem;}
                 .NewsTextLink{position: relative;text-decoration: none;color: white;}
                 .NewsTextLink::after{content: '';position: absolute; width: 100%; height: 2px;background: currentColor; left: 0; bottom: 0; border-radius: 10px;transform: scaleX(0); transform-origin: right; transition: transform 250ms ease-in;}
                 .NewsTextLink:hover::after{transform: scaleX(1); transform-origin: left;}
+                .NewsVideo{width: 90%;left: 0; margin: 1rem auto;}
+                    .NewsVideoFrame{width: 100%; height: auto; aspect-ratio: 16/9;border-radius: 20px;}
 
 
 .Footer{display: grid;justify-items: center; width: 100%; background-color: #474747; color: #D4D4D4;border-top-left-radius: 5px;border-top-right-radius: 5px;}
